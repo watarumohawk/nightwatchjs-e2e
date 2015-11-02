@@ -1,0 +1,29 @@
+{
+  "name": "Nightwatch-e2e",
+  "description": "Automatic end-to-end testing using by Nightwatch.js",
+  "version": "1.1.0",
+  "author": {
+    "name": "Wataru Sekiguchi",
+    "email": "wataru.sekiguchi416@gmail.com"
+  },
+  "licenses": "MIT",
+  "bugs": {
+    "url": "https://github.com/watarumohawk/nightwatchjs-e2e/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:watarumohawk/nightwatchjs-e2e.git"
+  },
+  "dependencies": {
+    "phantomjs": "^1.9.8",
+    "nightwatch": "^0.8.6",
+    "chai-nightwatch": "~0.1.x"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "grunt": "~0.4.4",
+    "grunt-nightwatch": "^0.5.1",
+    "grunt-selenium-webdriver": "^0.2.451",
+    "selenium-server-standalone-jar": "2.47.1"
+  }
+}
