@@ -5,7 +5,7 @@ module.exports = {
         browser.url("http://www.amazon.co.jp/");
 
         browser
-            .waitForElementVisible("div#a-page", 10000)
+            .waitForElementVisible("div#gw-mobile-herotator", 10000)
             .expect.element("div#a-page").text.to.contain("Amazon");
 
         browser.end();
