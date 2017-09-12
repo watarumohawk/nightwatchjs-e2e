@@ -14,12 +14,16 @@
     "type": "git",
     "url": "git+ssh://git@github.com:watarumohawk/nightwatchjs-e2e.git"
   },
+  "scripts": {
+    "test": "nightwatch",
+    "test:github": "nightwatch --group github",
+    "test:amazon": "nightwatch --group amazon"
+  },
   "dependencies": {
     "chai-nightwatch": "~0.1.x",
     "nightwatch": "^0.9.16"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
     "chromedriver": "^2.32.2",
     "grunt": "~0.4.5",
     "grunt-nightwatch": "^0.5.4",
