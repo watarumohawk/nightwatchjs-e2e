@@ -4,7 +4,7 @@ module.exports = {
 
         browser.url("https://github.com/")
             .waitForElementVisible("body", 10000)
-            .expect.element("div.home-hero").text.to.contain("GitHub")
+            .assert.containsText("body", "GitHub")
             .saveScreenshot('screenshots/github-top.png')
             .end();
     }

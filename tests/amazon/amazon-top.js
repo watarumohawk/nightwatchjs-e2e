@@ -3,8 +3,9 @@ module.exports = {
     "Amazon.co.jp top page" : function (browser) {
 
         browser.url("http://www.amazon.co.jp/")
-            .waitForElementVisible("div#gw-mobile-herotator", 10000)
-            .expect.element("div#a-page").text.to.contain("Amazon")
+            .waitForElementVisible("body", 10000)
+            .assert.containsText("div > .nav-right", "サインイン")
+            .click("#nav-button-cart")
             .end();
     }
 };

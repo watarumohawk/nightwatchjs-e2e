@@ -4,7 +4,7 @@ module.exports = {
 
         browser.url("https://github.com/watarumohawk")
             .waitForElementVisible("div.profile-header", 10000)
-            .expect.element("body > div.profile-header > h3").text.to.equal("watarumohawk")
+            .assert.containsText("body > div.profile-header", "watarumohawk")
             .end();
     }
 };
