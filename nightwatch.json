@@ -5,21 +5,18 @@
     "custom_assertions_path" : "",
     "page_objects_path" : "",
     "globals_path" : "",
-
     "test_workers" : {"enabled" : true, "workers" : "auto"},
-
     "selenium" : {
         "start_process" : true,
-        "server_path" : "node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.47.1.jar",
+        "server_path" : "node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.5.3.jar",
         "log_path" : "",
         "host" : "127.0.0.1",
         "port" : 4444,
         "cli_args" : {
-          "webdriver.chrome.driver" : "",
+          "webdriver.chrome.driver" : "node_modules/chromedriver/lib/chromedriver/chromedriver",
           "webdriver.ie.driver" : ""
         }
     },
-
     "test_settings" : {
         "default" : {
             "launch_url" : "http://localhost",
@@ -35,13 +32,17 @@
                 "on_error": false
             },
             "desiredCapabilities": {
-                "browserName": "phantomjs",
+                "browserName": "chrome",
                 "javascriptEnabled": true,
                 "acceptSslCerts": true,
-                "phantomjs.page.settings.userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4",
-                "phantomjs.binary.path": "node_modules/phantomjs/lib/phantom/bin/phantomjs"
-            },
-            "use_xpath": false
+                "chromeOptions": {
+                    "args": [
+                        "--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4",
+                        "--window-size=414,736"
+                    ]
+                },
+                "use_xpath": false
+            }
         }
     }
 }
