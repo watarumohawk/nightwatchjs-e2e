@@ -1,29 +1,3 @@
-# Dependencies
-
-* Node.js
-* npm
-
-# Tools
-
-1. [Nightwatch.js](http://nightwatchjs.org/)
-2. [PhantomJS](http://phantomjs.org/)
-3. [Selenium](http://www.seleniumhq.org/)
-4. [Grunt](http://gruntjs.com/)
-
-# Preparation
-
-## git clone
-
-```
-$ git clone git@github.com:watarumohawk/nightwatchjs-e2e.git
-```
-
-or
-
-```
-$ git clone https://github.com/watarumohawk/nightwatchjs-e2e.git
-```
-
 ## Install npm modules
 
 ```
