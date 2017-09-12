@@ -29,7 +29,7 @@
                 "enabled" : true,
                 "path" : "screenshots",
                 "on_failure": true,
-                "on_error": false
+                "on_error": true
             },
             "desiredCapabilities": {
                 "browserName": "chrome",
