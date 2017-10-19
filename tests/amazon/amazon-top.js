@@ -1,10 +1,13 @@
 module.exports = {
-    "@tags": ["toppage"],
-    "Amazon.co.jp top page" : function (browser) {
+  "@tags": ["toppage"],
+  "Amazon.co.jp top page" : function (browser) {
 
-        browser.url("http://www.amazon.co.jp/")
-            .waitForElementVisible("div#gw-mobile-herotator", 10000)
-            .expect.element("div#a-page").text.to.contain("Amazon")
-            .end();
-    }
+  var screenshots_dir = './screenshots/amazon/';
+  
+  browser
+    .url("http://www.amazon.co.jp/")
+    .waitForElementVisible("body", 3000)
+    .saveScreenshot(screenshots_dir + 'Amazon.png')
+    .end();
+  }
 };
