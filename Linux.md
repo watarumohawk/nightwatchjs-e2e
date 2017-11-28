@@ -7,18 +7,23 @@ I tested my codes on CentOS 7.2 with Vagrant.
 ```
 $ vagrant up
 $ vagrant ssh
-$ sudo yum install git
-$ curl -sL https://rpm.nodesource.com/setup_7.x | sudo -E bash -
-$ sudo yum install -y nodejs
-$ sudo yum install -y nodejs gcc-c++ make
-$ sudo yum install java-1.8.0-openjdk
+```
+
+In Vagrant:
+
+```
+# sudo yum install git
+# curl -sL https://rpm.nodesource.com/setup_7.x | sudo -E bash -
+# sudo yum install -y nodejs
+# sudo yum install -y nodejs gcc-c++ make
+# sudo yum install java-1.8.0-openjdk
 ```
 
 ### Update npm and Node.js
 
 ```
-$ sudo npm install -g npm@latest
-$ npm -v
+# sudo npm install -g npm@latest
+# npm -v
 5.5.1
 ```
 
@@ -33,7 +38,7 @@ I installed GConf2.
 * Ref: [shared libraries libgconf-2.so.4 is missing](https://stackoverflow.com/questions/37624225/shared-libraries-libgconf-2-so-4-is-missing)
 
 ```
-$ sudo yum install GConf2
+# sudo yum install GConf2
 ```
 
 Even after I installed GConf2, my tests couldn't be run.
@@ -45,7 +50,7 @@ I realised that I needed to install Google Chrome on Linux server as George ment
 ### Install Google Chrome
 
 ```
-sudo vi /etc/yum.repos.d/google.chrome.repo
+# sudo vi /etc/yum.repos.d/google.chrome.repo
 ```
 
 Write the following info in google.chrome.repo
@@ -62,12 +67,12 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 And then
 
 ```
-$ sudo yum update
-$ yum install google-chrome-stable
+# sudo yum update
+# yum install google-chrome-stable
 ```
 
 Now my tests should be run.
 
 ```
-$ npm run test
+# npm run test
 ```
