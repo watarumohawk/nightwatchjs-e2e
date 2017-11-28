@@ -33,3 +33,7 @@ $ brew cask install java
 * Test on multiple browsers
   
   - [Running tests in parallel](http://nightwatchjs.org/blog/testing-webrtc-apps-with-nightwatch/#runningtestsinparallel) 
+
+### Run test on Linux
+
+Go to [Linux.md](https://github.com/watarumohawk/nightwatchjs-e2e/blob/master/Linux.md)
