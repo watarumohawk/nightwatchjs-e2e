@@ -14,7 +14,6 @@ In Vagrant:
 ```
 # sudo yum install git
 # curl -sL https://rpm.nodesource.com/setup_7.x | sudo -E bash -
-# sudo yum install -y nodejs
 # sudo yum install -y nodejs gcc-c++ make
 # sudo yum install java-1.8.0-openjdk
 ```
